@@ -1,0 +1,158 @@
+body {
+    background-color: blueviolet;
+    overflow:hidden;
+}
+.container {
+    display: flex;
+    flex-direction: center;
+    margin-top: 7%;
+    background-color: blueviolet;
+}
+
+#game-board {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65vh;
+    height: 65vh;
+    border: 2px solid black;
+    border-collapse: separate; 
+    border-spacing: 20px;
+    border-radius: 10%;
+    padding-bottom: 10vh;
+    margin: auto; 
+    background-color: gainsboro;
+    box-shadow: 5px 5px 0 1px rgb(31, 29, 29)
+}
+
+#game-board td {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: blueviolet;
+    box-shadow: 1px 1px 1px 1px rgb(31, 29, 29)
+}
+
+.indicator {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);    
+    width: 60vh;
+    height: 60vh;
+    margin: auto;
+    padding-bottom: 10vh;
+    z-index: 1; 
+}
+.btn-container {
+    display: flex;
+    
+
+}
+.button{
+    position: relative;
+    width: 6vh;
+    height: 60vh;
+    margin: auto;
+    padding-bottom: 10vh;  
+}
+
+
+#indicator{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid yellowgreen;
+    transform: translateX(-50%);
+}
+
+.player {
+    position: absolute; 
+    top: 50%; 
+    left: 25%; 
+    transform: translate(-50%, -50%);    
+    width: 20vh;
+    height: 30vh;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0 1px rgb(31, 29, 29);
+    border-radius: 10%;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+    font-weight: 500;
+}
+.player-ia {
+    position: absolute; 
+    top: 50%; 
+    left: 75%; 
+    transform: translate(-50%, -50%);    
+    width: 20vh;
+    height: 30vh;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0 1px rgb(31, 29, 29);
+    border-radius: 10%;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+    font-weight: 500;
+}
+span{
+    font-size: 3em;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1150px){
+    span{
+        font-size: 2em;
+        font-weight: 400;
+    }
+    .player {
+        top: 10%; 
+        left: 40%; 
+        font-size: 1em;
+        width: 20vh ;
+        height: 10vh;
+    }
+    .player-ia {
+        top: 10%; 
+        left: 60%; 
+        font-size: 1em;
+        width: 20vh ;
+        height: 10vh;
+    }
+}
+@media screen and (max-width: 768px){
+    span{
+        font-size: 2em;
+        font-weight: 400;
+    }
+    .player {
+        top: 10%; 
+        left: 35%; 
+        font-size: 1em;
+        width: 10vh ;
+        height: 10vh;
+    }
+    .player-ia {
+        top: 10%; 
+        left: 65%; 
+        font-size: 1em;
+        width: 10vh ;
+        height: 10vh;
+    }
+    #game-board {
+        height: 42vh;
+        width: 42vh;
+    }
+    #indicator {
+        border-top: 20px solid transparent;
+    }
+}
