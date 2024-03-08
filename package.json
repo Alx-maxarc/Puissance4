@@ -1,0 +1,16 @@
+{
+  "name": "puissance-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server",
+    "build": "cp index.html dist/ && cp style.css dist/ && cp script.js dist/"
+  },
+  "author": "",
+  "license": "ISC"
+}

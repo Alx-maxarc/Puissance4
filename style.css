@@ -149,8 +149,8 @@ span{
         height: 10vh;
     }
     #game-board {
-        height: 42vh;
-        width: 42vh;
+        height: 45vh;
+        width: 95vw;
     }
     #indicator {
         border-top: 20px solid transparent;
